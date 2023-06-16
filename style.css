@@ -378,7 +378,7 @@ main .container .left .profile {
 .right {
   height: max-content;
   position: sticky;
-  top: 5.5rem;
+  top: var(--sticky-top-right);
 }
 
 .right .messages {
@@ -464,4 +464,32 @@ main .container .left .profile {
 .right .messages .message .message-body .unseen {
   font-weight: 600;
   color: var(--color-dark);
+}
+
+/* ------------ Friend Request ----------- */
+.right .friend-requests {
+  margin-top: 1rem;
+}
+
+.right .friend-requests h4 {
+  color: var(--color-gray);
+  margin: 1rem 0;
+}
+
+.right .request {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 0.8rem;
+}
+
+.right .request .info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.right .request .action {
+  display: flex;
+  gap: 1rem;
 }
